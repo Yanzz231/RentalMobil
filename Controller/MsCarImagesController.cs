@@ -60,15 +60,16 @@ namespace MsCarsImages.Controllers
                 }
                 else if (car_id.HasValue)
                 {
-                    var view = await _context.MsCarImages.FirstOrDefaultAsync(p =>
-                        p.Car_id == car_id
-                    );
-                    if (view == null)
+                    var views = await _context
+                        .MsCarImages.Where(p => p.Car_id == car_id)
+                        .ToListAsync(); 
+
+                    if (views == null || !views.Any())
                     {
-                        return NotFound(new { message = $"Data {id} Tidak ada" });
+                        return NotFound(new { message = $"Data untuk car_id {car_id} tidak ada" });
                     }
 
-                    return Ok(new { message = "Menampilkan Data", data = view });
+                    return Ok(new { message = "Menampilkan Data", data = views });
                 }
                 // KALO ELSE INI BERARPI LIAT FULL DATA
                 else

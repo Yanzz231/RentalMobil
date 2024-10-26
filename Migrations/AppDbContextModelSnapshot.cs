@@ -134,8 +134,9 @@ namespace Backend.Migrations
                         .IsRequired()
                         .HasColumnType("VARCHAR(255)");
 
-                    b.Property<int>("Password")
-                        .HasColumnType("int");
+                    b.Property<string>("Password")
+                        .IsRequired()
+                        .HasColumnType("VARCHAR(255)");
 
                     b.Property<string>("Phone_number")
                         .IsRequired()

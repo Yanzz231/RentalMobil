@@ -47,16 +47,17 @@ namespace MsCars.Controllers
         }
 
         [HttpGet("view")]
-        // FROMQUERY ITU BUAT LIAT VALUE DARI QUERY
-        public async Task<IActionResult> GetAll([FromQuery] int? id)
+        public async Task<IActionResult> GetAll(
+            [FromQuery] int? id,
+            [FromQuery] int page = 1,
+            [FromQuery] int pageSize = 8
+        )
         {
             try
             {
                 if (id.HasValue)
                 {
-                    var view = await _context.Mscar.FirstOrDefaultAsync(p =>
-                        p.Car_id == id
-                    );
+                    var view = await _context.Mscar.FirstOrDefaultAsync(p => p.Car_id == id);
                     if (view == null)
                     {
                         return NotFound(new { message = $"Data {id} Tidak ada" });
@@ -64,16 +65,33 @@ namespace MsCars.Controllers
 
                     return Ok(new { message = "Menampilkan Data", data = view });
                 }
-                // KALO ELSE INI BERARPI LIAT FULL DATA
                 else
                 {
-                    var viewall = await _context.Mscar.ToListAsync();
-                    if (viewall == null || !viewall.Any())
+                    // Retrieve all records and apply pagination
+                    var allData = await _context.Mscar.ToListAsync();
+                    if (allData == null || !allData.Any())
                     {
                         return NotFound(new { message = "Data tidak ada" });
                     }
 
-                    return Ok(new { message = "Menampilkan Semua Data", data = viewall });
+                    // Calculate total items and pages
+                    var totalItems = allData.Count;
+                    var totalPages = (int)Math.Ceiling(totalItems / (double)pageSize);
+
+                    // Get paginated items
+                    var paginatedData = allData.Skip((page - 1) * pageSize).Take(pageSize).ToList();
+
+                    return Ok(
+                        new
+                        {
+                            message = "Menampilkan Semua Data",
+                            data = paginatedData,
+                            totalItems = totalItems,
+                            totalPages = totalPages,
+                            currentPage = page,
+                            pageSize = pageSize,
+                        }
+                    );
                 }
             }
             catch (Exception ex)
@@ -89,9 +107,7 @@ namespace MsCars.Controllers
             {
                 if (id.HasValue)
                 {
-                    var delete = await _context.Mscar.FirstOrDefaultAsync(p =>
-                        p.Car_id == id
-                    );
+                    var delete = await _context.Mscar.FirstOrDefaultAsync(p => p.Car_id == id);
                     if (delete == null)
                     {
                         return NotFound(new { message = $"Data {id} Tidak ada" });

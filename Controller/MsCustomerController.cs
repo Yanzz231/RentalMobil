@@ -48,11 +48,28 @@ namespace MsCustomers.Controllers
 
         [HttpGet("view")]
         // FROMQUERY ITU BUAT LIAT VALUE DARI QUERY
-        public async Task<IActionResult> GetAll([FromQuery] int? id)
+        public async Task<IActionResult> GetAll(
+            [FromQuery] int? id,
+            string? username,
+            string? password
+        )
         {
             try
             {
-                if (id.HasValue)
+                if (!string.IsNullOrEmpty(username) && !string.IsNullOrEmpty(password))
+                {
+                    var view = await _context.MsCustomer.FirstOrDefaultAsync(p =>
+                        p.Name == username && p.Password == password
+                    );
+
+                    if (view == null)
+                    {
+                        return NotFound(new { message = $"Data {id} Tidak ada" });
+                    }
+
+                    return Ok(new { message = "Menampilkan Data", data = view });
+                }
+                else if (id.HasValue)
                 {
                     var view = await _context.MsCustomer.FirstOrDefaultAsync(p =>
                         p.Customer_id == id

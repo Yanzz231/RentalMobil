@@ -129,6 +129,7 @@ C:\Users\Lenovo\Downloads\ASPNET\backend\obj\Debug\net8.0\Backend.AssemblyInfo.c
 C:\Users\Lenovo\Downloads\ASPNET\backend\obj\Debug\net8.0\Backend.csproj.CoreCompileInputs.cache
 C:\Users\Lenovo\Downloads\ASPNET\backend\obj\Debug\net8.0\Backend.MvcApplicationPartsAssemblyInfo.cs
 C:\Users\Lenovo\Downloads\ASPNET\backend\obj\Debug\net8.0\Backend.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Lenovo\Downloads\ASPNET\backend\obj\Debug\net8.0\Backend.sourcelink.json
 C:\Users\Lenovo\Downloads\ASPNET\backend\obj\Debug\net8.0\staticwebassets.build.json
 C:\Users\Lenovo\Downloads\ASPNET\backend\obj\Debug\net8.0\staticwebassets.development.json
 C:\Users\Lenovo\Downloads\ASPNET\backend\obj\Debug\net8.0\staticwebassets\msbuild.Backend.Microsoft.AspNetCore.StaticWebAssets.props

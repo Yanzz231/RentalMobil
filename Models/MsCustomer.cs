@@ -11,7 +11,9 @@ namespace Database.Models
 
         [Column(TypeName = "VARCHAR(255)")]
         public string Email { get; set; } = string.Empty;
-        public int Password { get; set; }
+
+        [Column(TypeName = "VARCHAR(255)")]
+        public string Password { get; set; } = string.Empty;
 
         [Column(TypeName = "VARCHAR(255)")]
         public string Name { get; set; } = string.Empty;
@@ -21,7 +23,7 @@ namespace Database.Models
 
         [Column(TypeName = "VARCHAR(255)")]
         public string Address { get; set; } = string.Empty;
-        
+
         [Column(TypeName = "VARCHAR(255)")]
         public string Driver_license_number { get; set; } = string.Empty;
     }

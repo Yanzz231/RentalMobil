@@ -11,7 +11,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Backend.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    [Migration("20241025173026_InitialCreate")]
+    [Migration("20241026063939_InitialCreate")]
     partial class InitialCreate
     {
         /// <inheritdoc />
@@ -137,8 +137,9 @@ namespace Backend.Migrations
                         .IsRequired()
                         .HasColumnType("VARCHAR(255)");
 
-                    b.Property<int>("Password")
-                        .HasColumnType("int");
+                    b.Property<string>("Password")
+                        .IsRequired()
+                        .HasColumnType("VARCHAR(255)");
 
                     b.Property<string>("Phone_number")
                         .IsRequired()

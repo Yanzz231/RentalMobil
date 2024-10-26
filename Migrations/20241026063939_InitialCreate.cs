@@ -83,7 +83,8 @@ namespace Backend.Migrations
                         .Annotation("MySql:ValueGenerationStrategy", MySqlValueGenerationStrategy.IdentityColumn),
                     Email = table.Column<string>(type: "VARCHAR(255)", nullable: false)
                         .Annotation("MySql:CharSet", "utf8mb4"),
-                    Password = table.Column<int>(type: "int", nullable: false),
+                    Password = table.Column<string>(type: "VARCHAR(255)", nullable: false)
+                        .Annotation("MySql:CharSet", "utf8mb4"),
                     Name = table.Column<string>(type: "VARCHAR(255)", nullable: false)
                         .Annotation("MySql:CharSet", "utf8mb4"),
                     Phone_number = table.Column<string>(type: "VARCHAR(255)", nullable: false)
