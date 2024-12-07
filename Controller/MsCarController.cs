@@ -1,4 +1,5 @@
 using Database.Data;
+using Database.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 
@@ -50,14 +51,18 @@ namespace MsCars.Controllers
         public async Task<IActionResult> GetAll(
             [FromQuery] int? id,
             [FromQuery] int page = 1,
-            [FromQuery] int pageSize = 8
+            [FromQuery] int pageSize = 8,
+            [FromQuery] int? sortBy = 0,
+            [FromQuery] string? PickDate = null,
+            [FromQuery] string? ReturnDate = null,
+            [FromQuery] string? Year = null
         )
         {
             try
             {
                 if (id.HasValue)
                 {
-                    var view = await _context.Mscar.FirstOrDefaultAsync(p => p.Car_id == id);
+                    var view = await _context.MsCar.FirstOrDefaultAsync(p => p.Car_id == id);
                     if (view == null)
                     {
                         return NotFound(new { message = $"Data {id} Tidak ada" });
@@ -65,26 +70,46 @@ namespace MsCars.Controllers
 
                     return Ok(new { message = "Menampilkan Data", data = view });
                 }
-                else
+                else if (PickDate != null || ReturnDate != null || Year != null)
                 {
-                    // Retrieve all records and apply pagination
-                    var allData = await _context.Mscar.ToListAsync();
-                    if (allData == null || !allData.Any())
+                    var allData = _context.MsCar.AsQueryable();
+
+                    if (Year != null && int.TryParse(Year, out int yearValue))
                     {
-                        return NotFound(new { message = "Data tidak ada" });
+                        allData = allData.Where(car => car.Year == yearValue);
                     }
 
-                    // Calculate total items and pages
-                    var totalItems = allData.Count;
+                    if (PickDate != null)
+                    {
+                        allData =
+                            from car in allData
+                            join rental in _context.TrRental on car.Car_id equals rental.Car_id
+                            where rental.Rental_Date == PickDate
+                            select car;
+                    }
+
+                    if (ReturnDate != null)
+                    {
+                        allData =
+                            from car in allData
+                            join rental in _context.TrRental on car.Car_id equals rental.Car_id
+                            where rental.Return_Date == ReturnDate
+                            select car;
+                    }
+
+
+                    var totalItems = await allData.CountAsync();
                     var totalPages = (int)Math.Ceiling(totalItems / (double)pageSize);
 
-                    // Get paginated items
-                    var paginatedData = allData.Skip((page - 1) * pageSize).Take(pageSize).ToList();
+                    var paginatedData = await allData
+                        .Skip((page - 1) * pageSize)
+                        .Take(pageSize)
+                        .ToListAsync();
 
                     return Ok(
                         new
                         {
-                            message = "Menampilkan Semua Data",
+                            message = "Menampilkan Data berdasarkan Filter",
                             data = paginatedData,
                             totalItems = totalItems,
                             totalPages = totalPages,
@@ -92,6 +117,56 @@ namespace MsCars.Controllers
                             pageSize = pageSize,
                         }
                     );
+                }
+                else
+                {
+                    var allData = _context.MsCar.AsQueryable();
+
+                    // SORTING
+                    if (sortBy == 1)
+                    {
+                        allData = allData.OrderByDescending(car => car.Price_per_day);
+                    }
+                    else if (sortBy == 2)
+                    {
+                        allData = allData.OrderBy(car => car.Price_per_day);
+                    }
+
+                    if (page == 0)
+                    {
+                        var fullData = await allData.ToListAsync();
+                        return Ok(
+                            new
+                            {
+                                message = "Menampilkan Semua Data",
+                                data = fullData,
+                                totalItems = fullData.Count,
+                            }
+                        );
+                    }
+                    else
+                    {
+                        // NGHITUNG PAGE
+                        var totalItems = await allData.CountAsync();
+                        var totalPages = (int)Math.Ceiling(totalItems / (double)pageSize);
+
+                        var paginatedData = await allData
+                            .Skip((page - 1) * pageSize)
+                            .Take(pageSize)
+                            .ToListAsync();
+
+                        return Ok(
+                            new
+                            {
+                                message = "Menampilkan Semua Data",
+                                data = paginatedData,
+                                totalItems = totalItems,
+                                totalPages = totalPages,
+                                currentPage = page,
+                                pageSize = pageSize,
+                            }
+                        );
+                    }
                 }
             }
             catch (Exception ex)
@@ -107,13 +182,13 @@ namespace MsCars.Controllers
             {
                 if (id.HasValue)
                 {
-                    var delete = await _context.Mscar.FirstOrDefaultAsync(p => p.Car_id == id);
+                    var delete = await _context.MsCar.FirstOrDefaultAsync(p => p.Car_id == id);
                     if (delete == null)
                     {
                         return NotFound(new { message = $"Data {id} Tidak ada" });
                     }
 
-                    _context.Mscar.Remove(delete);
+                    _context.MsCar.Remove(delete);
                     await _context.SaveChangesAsync();
 
                     return Ok(new { message = "Data berhasil dihapus.", data = delete });

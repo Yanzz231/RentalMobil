@@ -34,28 +34,22 @@ namespace Backend.Migrations
                 .Annotation("MySql:CharSet", "utf8mb4");
 
             migrationBuilder.CreateTable(
-                name: "Mscar",
+                name: "MsCar",
                 columns: table => new
                 {
-                    Car_id = table.Column<int>(type: "int", nullable: false)
-                        .Annotation("MySql:ValueGenerationStrategy", MySqlValueGenerationStrategy.IdentityColumn),
-                    Name = table.Column<string>(type: "VARCHAR(255)", nullable: false)
-                        .Annotation("MySql:CharSet", "utf8mb4"),
-                    Model = table.Column<string>(type: "VARCHAR(255)", nullable: false)
-                        .Annotation("MySql:CharSet", "utf8mb4"),
-                    Year = table.Column<int>(type: "int", nullable: false),
-                    License_Plate = table.Column<string>(type: "VARCHAR(255)", nullable: false)
-                        .Annotation("MySql:CharSet", "utf8mb4"),
-                    Number_of_car_seats = table.Column<int>(type: "int", nullable: false),
-                    Transmission = table.Column<string>(type: "VARCHAR(255)", nullable: false)
-                        .Annotation("MySql:CharSet", "utf8mb4"),
-                    Price_per_day = table.Column<int>(type: "int", nullable: false),
-                    Status = table.Column<string>(type: "VARCHAR(255)", nullable: false)
-                        .Annotation("MySql:CharSet", "utf8mb4")
+                    Car_id = table.Column<string>(type: "NVARCHAR(36)", nullable: false),
+                    name = table.Column<string>(type: "NVARCHAR(200)", nullable: false),
+                    model = table.Column<string>(type: "NVARCHAR(100)", nullable: false),
+                    year = table.Column<int>(type: "int", nullable: false),
+                    license_Plate = table.Column<string>(type: "NVARCHAR(50)", nullable: false),
+                    number_of_car_seats = table.Column<int>(type: "int", nullable: false),
+                    transmission = table.Column<string>(type: "NVARCHAR(100)", nullable: false),
+                    price_per_day = table.Column<decimal>(type: "decimal(65,30)", nullable: false),
+                    status = table.Column<int>(type: "int", nullable: false)
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_Mscar", x => x.Car_id);
+                    table.PrimaryKey("PK_MsCar", x => x.Car_id);
                 })
                 .Annotation("MySql:CharSet", "utf8mb4");
 
@@ -171,7 +165,7 @@ namespace Backend.Migrations
                 name: "LtPayment");
 
             migrationBuilder.DropTable(
-                name: "Mscar");
+                name: "MsCar");
 
             migrationBuilder.DropTable(
                 name: "MsCarImages");

@@ -50,44 +50,40 @@ namespace Backend.Migrations
 
             modelBuilder.Entity("Database.Models.MsCar", b =>
                 {
-                    b.Property<int>("Car_id")
-                        .ValueGeneratedOnAdd()
+                    b.Property<string>("Car_id")
+                        .HasColumnType("NVARCHAR(36)");
+
+                    b.Property<string>("license_Plate")
+                        .IsRequired()
+                        .HasColumnType("NVARCHAR(50)");
+
+                    b.Property<string>("model")
+                        .IsRequired()
+                        .HasColumnType("NVARCHAR(100)");
+
+                    b.Property<string>("name")
+                        .IsRequired()
+                        .HasColumnType("NVARCHAR(200)");
+
+                    b.Property<int>("number_of_car_seats")
                         .HasColumnType("int");
 
-                    MySqlPropertyBuilderExtensions.UseMySqlIdentityColumn(b.Property<int>("Car_id"));
+                    b.Property<decimal>("price_per_day")
+                        .HasColumnType("decimal(65,30)");
 
-                    b.Property<string>("License_Plate")
-                        .IsRequired()
-                        .HasColumnType("VARCHAR(255)");
-
-                    b.Property<string>("Model")
-                        .IsRequired()
-                        .HasColumnType("VARCHAR(255)");
-
-                    b.Property<string>("Name")
-                        .IsRequired()
-                        .HasColumnType("VARCHAR(255)");
-
-                    b.Property<int>("Number_of_car_seats")
+                    b.Property<int>("status")
                         .HasColumnType("int");
 
-                    b.Property<int>("Price_per_day")
-                        .HasColumnType("int");
-
-                    b.Property<string>("Status")
+                    b.Property<string>("transmission")
                         .IsRequired()
-                        .HasColumnType("VARCHAR(255)");
+                        .HasColumnType("NVARCHAR(100)");
 
-                    b.Property<string>("Transmission")
-                        .IsRequired()
-                        .HasColumnType("VARCHAR(255)");
-
-                    b.Property<int>("Year")
+                    b.Property<int>("year")
                         .HasColumnType("int");
 
                     b.HasKey("Car_id");
 
-                    b.ToTable("Mscar");
+                    b.ToTable("MsCar");
                 });
 
             modelBuilder.Entity("Database.Models.MsCarImages", b =>

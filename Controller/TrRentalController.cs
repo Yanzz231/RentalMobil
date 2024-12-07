@@ -46,21 +46,32 @@ namespace TrRentals.Controllers
 
         [HttpGet("view")]
         // FROMQUERY ITU BUAT LIAT VALUE DARI QUERY
-        public async Task<IActionResult> GetAll([FromQuery] int? id)
+        public async Task<IActionResult> GetAll([FromQuery] int? id, int? customer_id)
         {
             try
             {
                 if (id.HasValue)
                 {
-                    var view = await _context.TrRental.FirstOrDefaultAsync(p =>
-                        p.Rental_id == id
-                    );
+                    var view = await _context.TrRental.FirstOrDefaultAsync(p => p.Rental_id == id);
                     if (view == null)
                     {
                         return NotFound(new { message = $"Data {id} Tidak ada" });
                     }
 
                     return Ok(new { message = "Menampilkan Data", data = view });
+                }
+                else if (customer_id.HasValue)
+                {
+                    var views = await _context
+                        .TrRental.Where(p => p.Customer_id == customer_id)
+                        .ToListAsync();
+
+                    if (views == null || !views.Any())
+                    {
+                        return NotFound(new { message = $"Data untuk car_id {customer_id} tidak ada" });
+                    }
+
+                    return Ok(new { message = "Menampilkan Data", data = views });
                 }
                 // KALO ELSE INI BERARPI LIAT FULL DATA
                 else

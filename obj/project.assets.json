@@ -4556,11 +4556,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Lenovo\\Downloads\\ASPNET\\backend\\Backend.csproj",
+      "projectUniqueName": "C:\\Users\\Lenovo\\Downloads\\Andrian Pratama_2802403681_MINI PROJECT\\Andrian Pratama_2802403681_ASP.NET\\Backend\\Backend.csproj",
       "projectName": "Backend",
-      "projectPath": "C:\\Users\\Lenovo\\Downloads\\ASPNET\\backend\\Backend.csproj",
+      "projectPath": "C:\\Users\\Lenovo\\Downloads\\Andrian Pratama_2802403681_MINI PROJECT\\Andrian Pratama_2802403681_ASP.NET\\Backend\\Backend.csproj",
       "packagesPath": "C:\\Users\\Lenovo\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Lenovo\\Downloads\\ASPNET\\backend\\obj\\",
+      "outputPath": "C:\\Users\\Lenovo\\Downloads\\Andrian Pratama_2802403681_MINI PROJECT\\Andrian Pratama_2802403681_ASP.NET\\Backend\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Lenovo\\AppData\\Roaming\\NuGet\\NuGet.Config"
