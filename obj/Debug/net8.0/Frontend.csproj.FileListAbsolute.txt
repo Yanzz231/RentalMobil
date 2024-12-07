@@ -1,0 +1,85 @@
+C:\Users\Lenovo\Downloads\ASPNET\frontend\bin\Debug\net8.0\appsettings.Development.json
+C:\Users\Lenovo\Downloads\ASPNET\frontend\bin\Debug\net8.0\appsettings.json
+C:\Users\Lenovo\Downloads\ASPNET\frontend\bin\Debug\net8.0\Frontend.staticwebassets.runtime.json
+C:\Users\Lenovo\Downloads\ASPNET\frontend\bin\Debug\net8.0\Frontend.exe
+C:\Users\Lenovo\Downloads\ASPNET\frontend\bin\Debug\net8.0\Frontend.deps.json
+C:\Users\Lenovo\Downloads\ASPNET\frontend\bin\Debug\net8.0\Frontend.runtimeconfig.json
+C:\Users\Lenovo\Downloads\ASPNET\frontend\bin\Debug\net8.0\Frontend.dll
+C:\Users\Lenovo\Downloads\ASPNET\frontend\bin\Debug\net8.0\Frontend.pdb
+C:\Users\Lenovo\Downloads\ASPNET\frontend\obj\Debug\net8.0\Frontend.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Lenovo\Downloads\ASPNET\frontend\obj\Debug\net8.0\Frontend.AssemblyInfoInputs.cache
+C:\Users\Lenovo\Downloads\ASPNET\frontend\obj\Debug\net8.0\Frontend.AssemblyInfo.cs
+C:\Users\Lenovo\Downloads\ASPNET\frontend\obj\Debug\net8.0\Frontend.csproj.CoreCompileInputs.cache
+C:\Users\Lenovo\Downloads\ASPNET\frontend\obj\Debug\net8.0\Frontend.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Lenovo\Downloads\ASPNET\frontend\obj\Debug\net8.0\Frontend.RazorAssemblyInfo.cache
+C:\Users\Lenovo\Downloads\ASPNET\frontend\obj\Debug\net8.0\Frontend.RazorAssemblyInfo.cs
+C:\Users\Lenovo\Downloads\ASPNET\frontend\obj\Debug\net8.0\staticwebassets.build.json
+C:\Users\Lenovo\Downloads\ASPNET\frontend\obj\Debug\net8.0\staticwebassets.development.json
+C:\Users\Lenovo\Downloads\ASPNET\frontend\obj\Debug\net8.0\staticwebassets\msbuild.Frontend.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\Lenovo\Downloads\ASPNET\frontend\obj\Debug\net8.0\staticwebassets\msbuild.build.Frontend.props
+C:\Users\Lenovo\Downloads\ASPNET\frontend\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.Frontend.props
+C:\Users\Lenovo\Downloads\ASPNET\frontend\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.Frontend.props
+C:\Users\Lenovo\Downloads\ASPNET\frontend\obj\Debug\net8.0\staticwebassets.pack.json
+C:\Users\Lenovo\Downloads\ASPNET\frontend\obj\Debug\net8.0\scopedcss\bundle\Frontend.styles.css
+C:\Users\Lenovo\Downloads\ASPNET\frontend\obj\Debug\net8.0\Frontend.dll
+C:\Users\Lenovo\Downloads\ASPNET\frontend\obj\Debug\net8.0\refint\Frontend.dll
+C:\Users\Lenovo\Downloads\ASPNET\frontend\obj\Debug\net8.0\Frontend.pdb
+C:\Users\Lenovo\Downloads\ASPNET\frontend\obj\Debug\net8.0\Frontend.genruntimeconfig.cache
+C:\Users\Lenovo\Downloads\ASPNET\frontend\obj\Debug\net8.0\ref\Frontend.dll
+C:\Users\Lenovo\Downloads\Andrian Pratama_2802403681_MINI PROJECT\Andrian Pratama_2802403681_ASP.NET\frontend\bin\Debug\net8.0\appsettings.Development.json
+C:\Users\Lenovo\Downloads\Andrian Pratama_2802403681_MINI PROJECT\Andrian Pratama_2802403681_ASP.NET\frontend\bin\Debug\net8.0\appsettings.json
+C:\Users\Lenovo\Downloads\Andrian Pratama_2802403681_MINI PROJECT\Andrian Pratama_2802403681_ASP.NET\frontend\bin\Debug\net8.0\Frontend.staticwebassets.runtime.json
+C:\Users\Lenovo\Downloads\Andrian Pratama_2802403681_MINI PROJECT\Andrian Pratama_2802403681_ASP.NET\frontend\bin\Debug\net8.0\Frontend.exe
+C:\Users\Lenovo\Downloads\Andrian Pratama_2802403681_MINI PROJECT\Andrian Pratama_2802403681_ASP.NET\frontend\bin\Debug\net8.0\Frontend.deps.json
+C:\Users\Lenovo\Downloads\Andrian Pratama_2802403681_MINI PROJECT\Andrian Pratama_2802403681_ASP.NET\frontend\bin\Debug\net8.0\Frontend.runtimeconfig.json
+C:\Users\Lenovo\Downloads\Andrian Pratama_2802403681_MINI PROJECT\Andrian Pratama_2802403681_ASP.NET\frontend\bin\Debug\net8.0\Frontend.dll
+C:\Users\Lenovo\Downloads\Andrian Pratama_2802403681_MINI PROJECT\Andrian Pratama_2802403681_ASP.NET\frontend\bin\Debug\net8.0\Frontend.pdb
+C:\Users\Lenovo\Downloads\Andrian Pratama_2802403681_MINI PROJECT\Andrian Pratama_2802403681_ASP.NET\frontend\obj\Debug\net8.0\Frontend.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Lenovo\Downloads\Andrian Pratama_2802403681_MINI PROJECT\Andrian Pratama_2802403681_ASP.NET\frontend\obj\Debug\net8.0\Frontend.AssemblyInfoInputs.cache
+C:\Users\Lenovo\Downloads\Andrian Pratama_2802403681_MINI PROJECT\Andrian Pratama_2802403681_ASP.NET\frontend\obj\Debug\net8.0\Frontend.AssemblyInfo.cs
+C:\Users\Lenovo\Downloads\Andrian Pratama_2802403681_MINI PROJECT\Andrian Pratama_2802403681_ASP.NET\frontend\obj\Debug\net8.0\Frontend.csproj.CoreCompileInputs.cache
+C:\Users\Lenovo\Downloads\Andrian Pratama_2802403681_MINI PROJECT\Andrian Pratama_2802403681_ASP.NET\frontend\obj\Debug\net8.0\Frontend.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Lenovo\Downloads\Andrian Pratama_2802403681_MINI PROJECT\Andrian Pratama_2802403681_ASP.NET\frontend\obj\Debug\net8.0\Frontend.RazorAssemblyInfo.cache
+C:\Users\Lenovo\Downloads\Andrian Pratama_2802403681_MINI PROJECT\Andrian Pratama_2802403681_ASP.NET\frontend\obj\Debug\net8.0\Frontend.RazorAssemblyInfo.cs
+C:\Users\Lenovo\Downloads\Andrian Pratama_2802403681_MINI PROJECT\Andrian Pratama_2802403681_ASP.NET\frontend\obj\Debug\net8.0\staticwebassets.build.json
+C:\Users\Lenovo\Downloads\Andrian Pratama_2802403681_MINI PROJECT\Andrian Pratama_2802403681_ASP.NET\frontend\obj\Debug\net8.0\staticwebassets.development.json
+C:\Users\Lenovo\Downloads\Andrian Pratama_2802403681_MINI PROJECT\Andrian Pratama_2802403681_ASP.NET\frontend\obj\Debug\net8.0\staticwebassets\msbuild.Frontend.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\Lenovo\Downloads\Andrian Pratama_2802403681_MINI PROJECT\Andrian Pratama_2802403681_ASP.NET\frontend\obj\Debug\net8.0\staticwebassets\msbuild.build.Frontend.props
+C:\Users\Lenovo\Downloads\Andrian Pratama_2802403681_MINI PROJECT\Andrian Pratama_2802403681_ASP.NET\frontend\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.Frontend.props
+C:\Users\Lenovo\Downloads\Andrian Pratama_2802403681_MINI PROJECT\Andrian Pratama_2802403681_ASP.NET\frontend\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.Frontend.props
+C:\Users\Lenovo\Downloads\Andrian Pratama_2802403681_MINI PROJECT\Andrian Pratama_2802403681_ASP.NET\frontend\obj\Debug\net8.0\staticwebassets.pack.json
+C:\Users\Lenovo\Downloads\Andrian Pratama_2802403681_MINI PROJECT\Andrian Pratama_2802403681_ASP.NET\frontend\obj\Debug\net8.0\scopedcss\bundle\Frontend.styles.css
+C:\Users\Lenovo\Downloads\Andrian Pratama_2802403681_MINI PROJECT\Andrian Pratama_2802403681_ASP.NET\frontend\obj\Debug\net8.0\Frontend.dll
+C:\Users\Lenovo\Downloads\Andrian Pratama_2802403681_MINI PROJECT\Andrian Pratama_2802403681_ASP.NET\frontend\obj\Debug\net8.0\refint\Frontend.dll
+C:\Users\Lenovo\Downloads\Andrian Pratama_2802403681_MINI PROJECT\Andrian Pratama_2802403681_ASP.NET\frontend\obj\Debug\net8.0\Frontend.pdb
+C:\Users\Lenovo\Downloads\Andrian Pratama_2802403681_MINI PROJECT\Andrian Pratama_2802403681_ASP.NET\frontend\obj\Debug\net8.0\Frontend.genruntimeconfig.cache
+C:\Users\Lenovo\Downloads\Andrian Pratama_2802403681_MINI PROJECT\Andrian Pratama_2802403681_ASP.NET\frontend\obj\Debug\net8.0\ref\Frontend.dll
+C:\Users\Lenovo\Downloads\Mini Project IT Div\Andrian Pratama_2802403681_ASP.NET\Frontend\bin\Debug\net8.0\appsettings.Development.json
+C:\Users\Lenovo\Downloads\Mini Project IT Div\Andrian Pratama_2802403681_ASP.NET\Frontend\bin\Debug\net8.0\appsettings.json
+C:\Users\Lenovo\Downloads\Mini Project IT Div\Andrian Pratama_2802403681_ASP.NET\Frontend\bin\Debug\net8.0\Frontend.staticwebassets.runtime.json
+C:\Users\Lenovo\Downloads\Mini Project IT Div\Andrian Pratama_2802403681_ASP.NET\Frontend\bin\Debug\net8.0\Frontend.exe
+C:\Users\Lenovo\Downloads\Mini Project IT Div\Andrian Pratama_2802403681_ASP.NET\Frontend\bin\Debug\net8.0\Frontend.deps.json
+C:\Users\Lenovo\Downloads\Mini Project IT Div\Andrian Pratama_2802403681_ASP.NET\Frontend\bin\Debug\net8.0\Frontend.runtimeconfig.json
+C:\Users\Lenovo\Downloads\Mini Project IT Div\Andrian Pratama_2802403681_ASP.NET\Frontend\bin\Debug\net8.0\Frontend.dll
+C:\Users\Lenovo\Downloads\Mini Project IT Div\Andrian Pratama_2802403681_ASP.NET\Frontend\bin\Debug\net8.0\Frontend.pdb
+C:\Users\Lenovo\Downloads\Mini Project IT Div\Andrian Pratama_2802403681_ASP.NET\Frontend\obj\Debug\net8.0\Frontend.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Lenovo\Downloads\Mini Project IT Div\Andrian Pratama_2802403681_ASP.NET\Frontend\obj\Debug\net8.0\Frontend.AssemblyInfoInputs.cache
+C:\Users\Lenovo\Downloads\Mini Project IT Div\Andrian Pratama_2802403681_ASP.NET\Frontend\obj\Debug\net8.0\Frontend.AssemblyInfo.cs
+C:\Users\Lenovo\Downloads\Mini Project IT Div\Andrian Pratama_2802403681_ASP.NET\Frontend\obj\Debug\net8.0\Frontend.csproj.CoreCompileInputs.cache
+C:\Users\Lenovo\Downloads\Mini Project IT Div\Andrian Pratama_2802403681_ASP.NET\Frontend\obj\Debug\net8.0\Frontend.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Lenovo\Downloads\Mini Project IT Div\Andrian Pratama_2802403681_ASP.NET\Frontend\obj\Debug\net8.0\Frontend.RazorAssemblyInfo.cache
+C:\Users\Lenovo\Downloads\Mini Project IT Div\Andrian Pratama_2802403681_ASP.NET\Frontend\obj\Debug\net8.0\Frontend.RazorAssemblyInfo.cs
+C:\Users\Lenovo\Downloads\Mini Project IT Div\Andrian Pratama_2802403681_ASP.NET\Frontend\obj\Debug\net8.0\Frontend.sourcelink.json
+C:\Users\Lenovo\Downloads\Mini Project IT Div\Andrian Pratama_2802403681_ASP.NET\Frontend\obj\Debug\net8.0\staticwebassets.build.json
+C:\Users\Lenovo\Downloads\Mini Project IT Div\Andrian Pratama_2802403681_ASP.NET\Frontend\obj\Debug\net8.0\staticwebassets.development.json
+C:\Users\Lenovo\Downloads\Mini Project IT Div\Andrian Pratama_2802403681_ASP.NET\Frontend\obj\Debug\net8.0\staticwebassets\msbuild.Frontend.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\Lenovo\Downloads\Mini Project IT Div\Andrian Pratama_2802403681_ASP.NET\Frontend\obj\Debug\net8.0\staticwebassets\msbuild.build.Frontend.props
+C:\Users\Lenovo\Downloads\Mini Project IT Div\Andrian Pratama_2802403681_ASP.NET\Frontend\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.Frontend.props
+C:\Users\Lenovo\Downloads\Mini Project IT Div\Andrian Pratama_2802403681_ASP.NET\Frontend\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.Frontend.props
+C:\Users\Lenovo\Downloads\Mini Project IT Div\Andrian Pratama_2802403681_ASP.NET\Frontend\obj\Debug\net8.0\staticwebassets.pack.json
+C:\Users\Lenovo\Downloads\Mini Project IT Div\Andrian Pratama_2802403681_ASP.NET\Frontend\obj\Debug\net8.0\scopedcss\bundle\Frontend.styles.css
+C:\Users\Lenovo\Downloads\Mini Project IT Div\Andrian Pratama_2802403681_ASP.NET\Frontend\obj\Debug\net8.0\Frontend.dll
+C:\Users\Lenovo\Downloads\Mini Project IT Div\Andrian Pratama_2802403681_ASP.NET\Frontend\obj\Debug\net8.0\refint\Frontend.dll
+C:\Users\Lenovo\Downloads\Mini Project IT Div\Andrian Pratama_2802403681_ASP.NET\Frontend\obj\Debug\net8.0\Frontend.pdb
+C:\Users\Lenovo\Downloads\Mini Project IT Div\Andrian Pratama_2802403681_ASP.NET\Frontend\obj\Debug\net8.0\Frontend.genruntimeconfig.cache
+C:\Users\Lenovo\Downloads\Mini Project IT Div\Andrian Pratama_2802403681_ASP.NET\Frontend\obj\Debug\net8.0\ref\Frontend.dll

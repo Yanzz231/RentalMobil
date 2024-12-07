@@ -1,0 +1,44 @@
+@page "/car/{id}"
+@model CarModel
+
+<div class="car-container my-10">
+    <div class="car-header">
+        <h1>Sewa Mobil</h1>
+    </div>
+
+    <div class="car-carousel">
+        <button class="car-carousel-btn car-prev">Prev</button>
+        <img src="" alt="Car Image" class="car-image" id="carouselImage" />
+        <button class="car-carousel-btn car-next">Next</button>
+    </div>
+
+
+    <div class="car-info-card">
+        <h2>Informasi Mobil</h2>
+        <table id="car-info-card table">
+
+        </table>
+    </div>
+
+    <div class="car-info-card mt-10">
+        <h2>Input Rental And Return Date</h2>
+        <div class="flex flex-col gap-3">
+            <span class="text-m text-center">Rental Date</span>
+            <input type="date" name="rental_date_input" id="rental_date_input" class="p-2 input">
+            <span class="text-m text-center">Return Date</span>
+            <input type="date" name="return_date_input" id="return_date_input" class="p-2 input">
+            <select name="method_payment" id="method_payment" class="p-2 input">
+                <option disabled selected>Pilih Methode Pembayaran</option>
+                <option value="Debit Card">Debit Card</option>
+                <option value="Credit Card">Credit Card</option>
+                <option value="Cash">Cash</option>
+            </select>
+        </div>
+        <button class="car-rent-button" id="button_rent">Sewa</button>
+    </div>
+</div>
+
+<script>
+    const carId = @Model.CarId;
+</script>
+<script src="~/js/car.js" asp-append-version="true"></script>

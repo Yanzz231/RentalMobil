@@ -1,0 +1,31 @@
+@page
+@{
+    ViewData["Title"] = "Login";
+}
+
+<div class="flex justify-center item-center my-20 text-white">
+    <div class="bg-secondary p-8 px-10 border-radius-m w-1/4">
+        <h1 class="text-xl text-center mb-4 font-bold">Login ke RentCar</h1>
+        <div class="flex flex-col gap-3">
+            <div class="flex flex-col justify-start gap-1">
+                <label for="">Username</label>
+                <input class="w-full p-2 border-radius-s input" type="Name" name="Name" id="Name" placeholder="Masukkan username Anda">
+            </div>
+            <div class="flex flex-col justify-start gap-1">
+                <label for="">Password</label>
+                <input class="w-full p-2 border-radius-s input" type="Password" name="Password" id="Password" placeholder="Masukkan password Anda">
+            </div>
+            <button id="login-submit" class="bg-blue-light button text-white p-1 border-radius-s w-full">Login</button>
+            <p class="text-xs">Belum punya akun? <a class="text-m text-href text-white" href="/register">Register
+                    Disini</a></p>
+        </div>
+    </div>
+</div>
+
+<script>
+    const userPage = localStorage.getItem("username") 
+    const passwordPage = localStorage.getItem("password") 
+    if(userPage && passwordPage) {
+        window.location.href = "/"
+    }
+</script>

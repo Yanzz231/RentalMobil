@@ -1,0 +1,57 @@
+@page
+@{
+    ViewData["Title"] = "Register";
+}
+
+<div class="flex justify-center item-center my-8">
+    <div class="bg-secondary p-8 border-radius-m text-white">
+        <h1 class="text-xl text-center mb-4 font-bold">Registrasi ke RentCar</h1>
+        <div class="flex flex-col gap-3">
+            <div class="flex flex-col justify-start gap-1">
+                <label for="">Nama Lengkap</label>
+                <input class="w-full p-2 text-xs border-radius-s input" type="text" name="Name" id="Name"
+                    placeholder="Masukkan nama lengkap anda">
+            </div>
+            <div class="flex flex-col justify-start gap-1">
+                <label for="">Email</label>
+                <input class="w-full p-2 text-xs border-radius-s input" type="email" name="Email" id="Email"
+                    placeholder="Masukkan email Anda">
+            </div>
+            <div class="flex gap-3">
+                <div class="flex flex-col justify-start gap-1">
+                    <label for="">Password</label>
+                    <input class="w-full p-2 text-xs border-radius-s input" type="password" name="Password"
+                        id="Password" placeholder="Masukkan password Anda">
+                </div>
+                <div class="flex flex-col justify-start gap-1">
+                    <label for="">Re-password</label>
+                    <input class="w-full p-2 text-xs border-radius-s input" type="password" name="Re-password"
+                        id="Re-password" placeholder="Masukkan kembali password Anda">
+                </div>
+            </div>
+            <div class="flex gap-3">
+                <div class="flex flex-col justify-start gap-1">
+                    <label for="">Nomor Telefon</label>
+                    <input class="w-full p-2 text-xs border-radius-s input" type="number" name="Phone" id="Phone"
+                        placeholder="Masukkan nomor telefon Anda">
+                </div>
+                <div class="flex flex-col justify-start gap-1">
+                    <label for="">Email</label>
+                    <input class="w-full p-2 text-xs border-radius-s input" type="text" name="Address" id="Address"
+                        placeholder="Masukkan alamat anda">
+                </div>
+            </div>
+            <button id="register-submit" class="bg-blue-light button text-white p-1 border-radius-s w-full">Register</button>
+            <p class="text-xs">Sudah punya akun? <a class="text-m text-href text-white" href="/login">Login
+                    Disini</a></p>
+        </div>
+    </div>
+</div>
+
+<script>
+    const userPage = localStorage.getItem("username") 
+    const passwordPage = localStorage.getItem("password") 
+    if(userPage && passwordPage) {
+        window.location.href = "/"
+    }
+</script>

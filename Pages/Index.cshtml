@@ -1,0 +1,51 @@
+﻿@page
+@{
+    ViewData["Title"] = "Home";
+}
+
+<div class="mb-10">
+    <div class="justify-center flex p-5">
+        <h1 class="font-m">Selamat Datang di Rental Mobil Kamu</h1>
+    </div>
+    <div class="bg-secondary w-full border-radius-m item-center mx-auto container">
+        <div class="mx-2 p-5">
+            <div class="flex gap-3 flex-wrap item-center text-white">
+                <div class="flex flex-col gap-1 text-m">
+                    <div>Pickup Date:</div>
+                    <input id="pickupDate" type="date" class="w-30 border-radius-s button p-2">
+                </div>
+
+                <div class="flex flex-col gap-1">
+                    <div>Return Date:</div>
+                    <input id="returnDate" type="date" class="w-30 border-radius-s button p-2">
+                </div>
+
+                <div class="flex flex-col gap-1">
+                    <div>Filter Tahun Pembuatan:</div>
+                    <select name="yearSelect" id="yearSelect" class="p-2">
+                        <option disabled selected>Pilih Tahun</option>
+                    </select>
+                </div>
+            </div>
+            <button id="submit-filter" class="w-20 button border-radius-s mt-4 h-6 bg-blue-light text-white">Submit</button>
+        </div>
+    </div>
+</div>
+</div>
+
+<div class="mx-auto container my-10">
+    <div class="flex gap-2 item-center">
+        <div class="text-2xl font-bold">Sorting Berdasarkan</div>
+        <select name="" id="sort-select" class="p-2">
+            <option disabled selected>Harga Terendah - Tertinggi</option>
+            <option value="1">Tertinggi</option>
+            <option value="2">Terrendah</option>
+        </select>
+    </div>
+</div>
+
+<div class="mx-auto container">
+    <div class="grid grid-cols-card gap-3 item-center mb-10 justify-center text-center" id="car-container"></div>
+</div>
+
+<div class="flex justify-center text-center mb-10 gap-2" id="pagination-container"></div>
