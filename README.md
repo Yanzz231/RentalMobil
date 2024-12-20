@@ -2,7 +2,7 @@
 
 ## Installation
 
-Just by typing dotnet run in command prompt or on linux
+Just by typing ```dotnet run``` in command prompt or on linux
 
 ## Helper 🤖
 
